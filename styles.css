@@ -1,0 +1,245 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0%;
+    font-family: Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    align-items: center;
+    border: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 5px; 
+    z-index: 1000; 
+    position: fixed;
+    background-color: white;
+}
+
+
+span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+header img{
+    width: 10%;
+}
+
+nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 40%;
+    min-width: 200px;
+}
+
+a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+section a:link, a:visited {
+    background-color:white ;
+    border-radius: 25px;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    word-break: break-word;
+    font-size: 1.25rem;
+  }
+  
+/* section  a:hover, a:active {
+    background-color: blue;
+  } */
+
+
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-section img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+   
+}
+
+/* .main-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    flex: 1 2;
+    max-width: 300px;
+  } */
+
+  .main-section div{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 500px;
+    min-width: 400px;
+    margin: 0;
+    padding: .5rem;
+    word-break: break-word;
+    font-size: 1.25rem;
+    background-color: rgba(0,0,0,.3);
+    color: #f2f2f2;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-secundaria{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+      margin-top: 20px;
+  }
+  /* .section-secundaria div{
+      display: flex;
+      width: 30%;
+      margin-bottom: 20px;
+    
+  }
+
+  .section-secundaria img{
+      
+      width: 100%;
+  }
+
+  #container {
+    display: flex;
+    position: relative;
+  }
+
+.centeredText {
+    width: 20;
+    position: absolute;
+    top:80%;
+    left: 45%;
+    z-index: 2;
+    transform: translate(-50% -50%);
+    flex: 1 1;
+  } */
+
+  .box-flex {
+    display: flex;
+    flex-flow: row ;
+    align-items: flex-start;
+    justify-content: center;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    /* background-color: #333333; */
+    color: #d9d9d9;
+    width: 100%;
+  }
+  
+  .box-flex-bottom {
+    align-items: flex-end;
+  }
+
+  .box-img {
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+  }
+
+
+.box-img:hover {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+
+}
+
+.box-caption {
+    position: absolute;
+    max-width: 200px;
+    margin: 0;
+    padding: .5rem;
+    word-break: break-word;
+    font-size: 1.25rem;
+    background-color: rgba(0,0,0,.3);
+    color: #f2f2f2;
+  }
+
+  .box-caption:hover {
+    background-color: rgba(0,0,0,.5);
+    color: #e6e6e6;
+    transition: all ease .5s;
+  }
+
+  .align-start {
+    align-self: flex-start;
+  }
+
+  .align-center {
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .box-grid img{
+      display: flex;
+      width: 100%;
+      
+    
+  }
+
+  .box-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    padding: 0;
+    margin: 20px;
+  }
+
+  footer{
+      height: 10vh;
+      background-color: purple;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+  }
+
+  footer div{
+      align-self: center;
+  }
