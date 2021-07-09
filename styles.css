@@ -3,7 +3,9 @@ body{
     flex-direction: column;
     width: 100vw;
     margin: 0%;
+    padding: 0%;
     font-family: Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -77,7 +79,7 @@ section a:link, a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 500px;
+    /* min-height: 500px; */
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -244,7 +246,6 @@ section a:link, a:visited {
       align-self: center;
   }
 
-
-  * {
+  *, *:before, *:after {
     box-sizing: border-box;
   }
