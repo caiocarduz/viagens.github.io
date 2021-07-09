@@ -243,3 +243,8 @@ section a:link, a:visited {
   footer div{
       align-self: center;
   }
+
+
+  * {
+    box-sizing: border-box;
+  }
